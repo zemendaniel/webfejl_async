@@ -8,4 +8,9 @@ class Service {
             setTimeout(() => {resolve(this.#data)}, 600)
         })
     }
+    initInvalid() {
+        return new Promise(reject => {
+            setTimeout(() => {reject("Nem, nem...")}, 600)
+        })
+    }
 }

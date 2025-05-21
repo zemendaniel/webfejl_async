@@ -13,4 +13,7 @@ class ViewDataController {
             this.#div.appendChild(div)
         }
     }
+    renderError(errorMsg) {
+        this.#div.innerText = errorMsg
+    }
 }
